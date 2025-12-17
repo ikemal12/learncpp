@@ -37,3 +37,10 @@
 * main is a special type of function that doesnt have to return anything (will return 0 by default)
 * all other functions must return something -> what their return type is 
 * two types -> declarations in header files and definitions in source files
+
+### Header Files
+* #pragma once is a preprocessor directive used to prevent header files from being included multiple times in a single source file
+* #ifndef #define #endif does the same thing (commonly known as include guard) -> if macro eg MYCLASS_H has not been defined yet then include the code between #ifndef and #endif otherwise skip it
+* #pragma once is more modern convention
+* using quotes eg #include "log.h" is path relative to the file eg #include "../log.h" means go one directory up and include the log.h file there
+* on the other hand angular brackets eg #include <iostream> should be used only for compile include paths
