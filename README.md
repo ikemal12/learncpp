@@ -8,12 +8,28 @@
 * #include is a preprocessing statement (copies and pastes header file contents into source file)
 * compiler converts source files (.cpp) to object files (.obj)
 * linker combines object files into .exe file (machine code)
+
+### Compiling
 * #define allows us to give a name to a constant value before the program is compiled
 * #if #endif preprocesser statements allow us to control compilation of portions of a source file
 * C -> compile errors, LNK -> link errors
+
+### Linking
 * linking is process of combining declarations (function exists) and definitions (function implementations) together to form one entry point into the application
 * there must be an entry point to the program for it to run (almost always main)
 * static is used to define functions with internal linkage scope ie. this function is only used in this file and not elsewhere!
 * linking functions takes into consideration the return type and parameters as well, not just the function name!
 * duplicate functions are ambiguous and also cause linking errors!
-* 
+
+### Variables
+* int is 4 bytes -> values range from -2^31 to 2^31
+* you can define/initialise unsigned int using the unsigned keyword -> can store values from 0 to 2^32
+* char (1 byte), short (2 bytes), int (4 bytes), long (4 bytes), long long (8 bytes) -> unsigned can be used with any of these
+* float type can be used to store decimals (4 bytes) -> need to add 'f' after value to indicate its a float eg. `float num = 5.5f;`
+* double stores decimals as well but 8 bytes
+* bool keyword used for booleans (1 byte)
+* note these are primitive data types but they all boil down to storing numbers (even char!) and in essence the only difference between them is their size in memory
+* use sizeof to get the size of a data type (in bytes), eg. sizeof(double) = 8
+* references (&) and pointers (*) hinted at, coming later...
+
+
