@@ -44,3 +44,11 @@
 * #pragma once is more modern convention
 * using quotes eg #include "log.h" is path relative to the file eg #include "../log.h" means go one directory up and include the log.h file there
 * on the other hand angular brackets eg #include <iostream> should be used only for compile include paths
+
+### Debugging (some things are Visual Studio specific but concepts are the same)
+* breakpoints pause execution of program at certain line(s), very useful to execute code line by line
+* very useful for reading memory to see value of variables at each point in time
+
+### Conditionals
+* 
+
