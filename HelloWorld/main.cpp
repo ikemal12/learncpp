@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 void Log(const char* message);
 
@@ -37,6 +38,16 @@ int main() {
     do {
         // executes at least once
     } while (false);
+
+    int var = 8;
+    void* ptr = &var;
+
+    char* buffer = new char[8];
+    memset(buffer, 0, 8);
+
+    char** ptr = &buffer;
+
+    delete[] buffer;
 
     MultiplyAndLog(5, 8);
     MultiplyAndLog(10, 20);

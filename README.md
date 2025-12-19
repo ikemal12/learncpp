@@ -68,3 +68,16 @@ do {
 * `continue` skips to the next iteration of a loop
 * `break` breaks out of the loop completely 
 * `return` exits a function immediately, sending a specified value back to the code that called it
+
+### Pointers
+* pointer is just an integer/number that represents an address in memory
+* note you cannot read from address 0 - its not a valid pointer value -> same with NULL and nullptr
+* use `*` before the variable to indicate its a pointer -> eg. `void* ptr`  
+* use `&` to get the memory address of a variable:
+```
+int var = 8;
+    void* ptr = &var;
+```
+* if you put `*` in front of a pointer, this is known as dereferencing and will access the data that the pointer points to 
+* types help the compiler know how much memory to assign a pointer/variable
+* if you put `**` that initialises a pointer to a pointer (double pointer)
