@@ -50,5 +50,9 @@
 * very useful for reading memory to see value of variables at each point in time
 
 ### Conditionals
+* conditional statements ultimately break down to a 0 or 1 check eg if (1) or if(0) depending on the condition in the brackets, and that determines if the code in the block is included at compilation or not
+* can be more concise eg if (x) std::cout << "Hello!" << std::endl
+
+### Loops
 * 
 

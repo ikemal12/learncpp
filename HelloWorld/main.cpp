@@ -12,7 +12,18 @@ void MultiplyAndLog(int a, int b) {
 }
 
 int main() {
-    Log("Hello, World!");
+    int x = 5;
+    bool comparisonResult = x == 5;
+    if (comparisonResult) {
+        Log("Hello, World!");
+    }
+
+    const char* ptr = "Hello";
+    if (ptr) 
+        Log(ptr);
+    else 
+        Log("Pointer is null");
+
     MultiplyAndLog(5, 8);
     MultiplyAndLog(10, 20);
     MultiplyAndLog(15, 25);
