@@ -58,10 +58,13 @@
 * simple while loop -> int i=0; while (i < 5) { i++ //do something}
 * also one more type called do-while loop:
 
-```do {
+```
+do {
     // executes at least once
 } while (condition);
 ```
 
 ### Control Flow 
-
+* `continue` skips to the next iteration of a loop
+* `break` breaks out of the loop completely 
+* `return` exits a function immediately, sending a specified value back to the code that called it
