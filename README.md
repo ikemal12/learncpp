@@ -54,5 +54,14 @@
 * can be more concise eg if (x) std::cout << "Hello!" << std::endl
 
 ### Loops
-* 
+* simple for loop -> for (int i = 0; i < 5; i++) { // do something}
+* simple while loop -> int i=0; while (i < 5) { i++ //do something}
+* also one more type called do-while loop:
+
+```do {
+    // executes at least once
+} while (condition);
+```
+
+### Control Flow 
 

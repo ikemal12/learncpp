@@ -24,6 +24,20 @@ int main() {
     else 
         Log("Pointer is null");
 
+    for (int i = 0; i < 5; i++) {
+        Log("Hello World");
+    }
+
+    int i = 0;
+    while (i < 5) {
+        Log("Hello World");
+        i++;
+    }
+
+    do {
+        // executes at least once
+    } while (false);
+
     MultiplyAndLog(5, 8);
     MultiplyAndLog(10, 20);
     MultiplyAndLog(15, 25);
