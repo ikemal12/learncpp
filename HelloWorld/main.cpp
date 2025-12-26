@@ -49,6 +49,11 @@ int main() {
 
     delete[] buffer;
 
+    int a = 5;
+    int& ref = a;
+    ref = 2;
+    LOG(a);
+
     MultiplyAndLog(5, 8);
     MultiplyAndLog(10, 20);
     MultiplyAndLog(15, 25);
