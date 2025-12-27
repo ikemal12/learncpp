@@ -87,3 +87,15 @@ int var = 8;
 * eg making a reference to point to an already existing variable doesnt create a new variable for the reference -> its simply an alias for the variable ie. from a high level just another name for it
 * you cannot change a reference to point to another variable (you can with pointers though)
 * references must be assigned a value when initialised
+
+### Classes
+* help to encapsulate data into a type
+* class is an object from which you instantiate instances of that object eg. ```Player player;```
+* by default all data/members of a class are private, meaning the class itself can access the data
+* if you want to access/modify data from outside the class you have to use public
+* in summary classes allow us to group variables together and add functionality (methods) to form a type
+* important note: classes are for programmers - they dont add any new functionality we could do without them - just a way for us to structure and better maintain our code
+
+### Structs
+* a struct (structure) is literally a class but with one key difference -> its members/data is public by default, not private
+* when to use class vs struct? there is technically no right way, but typically use class for more complex objects with lots of data/functionality and needs other features like inheritance etc and struct for more simple data eg vec storing 2 coordinates
