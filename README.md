@@ -81,3 +81,8 @@ int var = 8;
 * if you put `*` in front of a pointer, this is known as dereferencing and will access the data that the pointer points to 
 * types help the compiler know how much memory to assign a pointer/variable
 * if you put `**` that initialises a pointer to a pointer (double pointer)
+
+### References
+* in short, a reference is just a pointer (albeit with some syntactical sugar)
+* eg making a reference to point to an already existing variable doesnt create a new variable for the reference -> its simply an alias for the variable ie. from a high level just another name for it
+* 

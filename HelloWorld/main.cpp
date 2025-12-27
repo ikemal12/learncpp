@@ -12,6 +12,10 @@ void MultiplyAndLog(int a, int b) {
     std::cout << result << std::endl;
 }
 
+void Increment(int* value) {
+    (*value)++;
+}
+
 int main() {
     int x = 5;
     bool comparisonResult = x == 5;
@@ -53,6 +57,7 @@ int main() {
     int& ref = a;
     ref = 2;
     LOG(a);
+    Increment(&a);
 
     MultiplyAndLog(5, 8);
     MultiplyAndLog(10, 20);
