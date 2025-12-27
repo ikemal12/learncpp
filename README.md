@@ -85,4 +85,5 @@ int var = 8;
 ### References
 * in short, a reference is just a pointer (albeit with some syntactical sugar)
 * eg making a reference to point to an already existing variable doesnt create a new variable for the reference -> its simply an alias for the variable ie. from a high level just another name for it
-* 
+* you cannot change a reference to point to another variable (you can with pointers though)
+* references must be assigned a value when initialised
