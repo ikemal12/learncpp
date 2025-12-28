@@ -110,3 +110,11 @@ int var = 8;
 * static within classes/structs for variables means those variables are shared across all instances so they point to the same memory
 * you also have to declare those static variables eg. `int Entity::x;`
 * important to note that static methods cannot access non static variables within a class/struct -> its the same as if you defined the method outside the class -> they dont have access (a parameter) to the class instance
+
+### Enums
+* Enum (short for enumeration) is just a set of values that you want to group together
+* once you declare an enum you can use the enum name as the actual type
+* if you dont specify the values by default the first one will start with 0 and increment up eg. `A=0, B=1, C=2`
+* you can also specify which type of integer you want an enum to be eg. `enum Example : unsigned char`
+* enums by default are 32-bit integers, however if you specify a type then you can use less memory like 8 bits for unsigned char
+* at the end of the day, enums are just integers -> whenever you have a set of values you want to represent numerically, use enums

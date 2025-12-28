@@ -8,7 +8,7 @@ struct Entity {
     void Print() {
         std::cout << "X: " << x << ", Y: " << y << std::endl;
     }
-}
+};
 
 static void Print(Entity e) {
     std::cout << e.x << ", " << e.y << std::endl;
