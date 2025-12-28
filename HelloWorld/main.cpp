@@ -2,6 +2,15 @@
 #include <cstring>
 
 void Log(const char* message);
+void Log(int value);
+
+void Log(const char* message) {
+    std::cout << message << std::endl;
+}
+
+void Log(int value) {
+    std::cout << value << std::endl;
+}
 
 int Multiply(int a, int b) {
     return a * b;
@@ -25,10 +34,13 @@ public:
         x += xa * speed;
         y += ya * speed;
     }
-}
+};
 
 int main() {
     Player player;
+    player.x = 0;
+    player.y = 0;
+    player.speed = 1;
     player.Move(1, -1);
 
     int x = 5;
@@ -37,9 +49,9 @@ int main() {
         Log("Hello, World!");
     }
 
-    const char* ptr = "Hello";
-    if (ptr) 
-        Log(ptr);
+    const char* cptr = "Hello";
+    if (cptr) 
+        Log(cptr);
     else 
         Log("Pointer is null");
 
@@ -58,19 +70,19 @@ int main() {
     } while (false);
 
     int var = 8;
-    void* ptr = &var;
+    void* vptr = &var;
 
     char* buffer = new char[8];
     memset(buffer, 0, 8);
 
-    char** ptr = &buffer;
+    char** bptr = &buffer;
 
     delete[] buffer;
 
     int a = 5;
     int& ref = a;
     ref = 2;
-    LOG(a);
+    Log(a);
     Increment(a);
 
     MultiplyAndLog(5, 8);

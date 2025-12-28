@@ -99,3 +99,11 @@ int var = 8;
 ### Structs
 * a struct (structure) is literally a class but with one key difference -> its members/data is public by default, not private
 * when to use class vs struct? there is technically no right way, but typically use class for more complex objects with lots of data/functionality and needs other features like inheritance etc and struct for more simple data eg vec storing 2 coordinates
+
+### Static
+* static keyword can have 2 meanings depending on the context
+* first one is if its used outside a class/struct then that symbol declared as static will only be visible to that file you have defined it in
+* whereas inside class/struct makes attributes/methods belong to class/struct itself instead of instances of the class/struct -> the attribute/method is shared between all instances of the class/struct 
+* extern keyword helps to declare a variable but tell the linker that its value is stored in another file
+* just think of static outside a class as marking that variable/function as private to that file
+* typically things should be marked as static unless you need them to be global, as otherwise it could introduce some bad bugs
