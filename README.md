@@ -90,7 +90,7 @@ int var = 8;
 
 ### Classes
 * help to encapsulate data into a type
-* class is an object from which you instantiate instances of that object eg. ```Player player;```
+* class is an object from which you instantiate instances of that object eg. `Player player;`
 * by default all data/members of a class are private, meaning the class itself can access the data
 * if you want to access/modify data from outside the class you have to use public
 * in summary classes allow us to group variables together and add functionality (methods) to form a type
@@ -107,3 +107,6 @@ int var = 8;
 * extern keyword helps to declare a variable but tell the linker that its value is stored in another file
 * just think of static outside a class as marking that variable/function as private to that file
 * typically things should be marked as static unless you need them to be global, as otherwise it could introduce some bad bugs
+* static within classes/structs for variables means those variables are shared across all instances so they point to the same memory
+* you also have to declare those static variables eg. `int Entity::x;`
+* important to note that static methods cannot access non static variables within a class/struct -> its the same as if you defined the method outside the class -> they dont have access (a parameter) to the class instance
