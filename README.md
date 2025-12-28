@@ -124,3 +124,6 @@ int var = 8;
 * constructors must match the name of the class -> note they dont have a return type
 * if you dont specify a constructor, it will provide a default constructor which is empty and doesnt do anything -> important! you must manually initialize all your primitive types otherwise they will be set to whatever was leftover in that memory (which is usually not a good thing!)
 
+### Destructors
+* evil twin of constructors -> basically does the opposite so called whenever you destroy an object (ie. goes out of scope) -> cleans up variables and frees up memory
+* use the tilde `~` before the destructor name eg. `~Entity() {}` to declare a destructor
