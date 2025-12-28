@@ -118,3 +118,9 @@ int var = 8;
 * you can also specify which type of integer you want an enum to be eg. `enum Example : unsigned char`
 * enums by default are 32-bit integers, however if you specify a type then you can use less memory like 8 bits for unsigned char
 * at the end of the day, enums are just integers -> whenever you have a set of values you want to represent numerically, use enums
+
+### Constructors
+* constructor is a special type of method which runs everytime we instantiate an object
+* constructors must match the name of the class -> note they dont have a return type
+* if you dont specify a constructor, it will provide a default constructor which is empty and doesnt do anything -> important! you must manually initialize all your primitive types otherwise they will be set to whatever was leftover in that memory (which is usually not a good thing!)
+
