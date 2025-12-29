@@ -130,3 +130,11 @@ int var = 8;
 
 ### Inheritance
 * allows us to create sub classes from a base class -> avoid code duplication and allows us to create extended functionality
+* just use colon followed by class name to inherit from another class eg. `class Player : public Entity` and the Player class will inherit all public features from the base Entity class
+
+### Virtual Functions
+* allow us to overwrite methods within subclasses
+* virtual functions do something called dynamic dispatch which is implemented by a vtable -> contains a mapping for all the virtual functions in our base class so that we can map them to the correct overwritten function at runtime
+* to override a base function in the base class, just put the `virtual` keyword in front of it, eg. `virtual std::string GetName()`
+* its also good practice to mark the overriden function using `override` keyword, eg. `std::string GetName() override {return m_Name;}`
+* note virtual functions come with runtime costs -> first extra memory from storing vtable and second from actually searching the vtable for the virtual function to map to
