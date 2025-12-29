@@ -127,3 +127,6 @@ int var = 8;
 ### Destructors
 * evil twin of constructors -> basically does the opposite so called whenever you destroy an object (ie. goes out of scope) -> cleans up variables and frees up memory
 * use the tilde `~` before the destructor name eg. `~Entity() {}` to declare a destructor
+
+### Inheritance
+* allows us to create sub classes from a base class -> avoid code duplication and allows us to create extended functionality
