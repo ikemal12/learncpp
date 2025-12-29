@@ -145,3 +145,10 @@ int var = 8;
 * to declare a pure virtual function set it to 0, eg. `virtual std::string GetName() = 0;`
 * note in C++ interfaces are just implemented as classes (other languages have interface keyword but c++ does not)
 * useful for guaranteeing a class has a certain function so you can use it elsewhere
+
+### Visibility
+* refers to how visible certain members or methods of a class actually are ie. who can see them, call them etc.
+* 3 basic visibility modifiers -> `public`, `private` and `protected`
+* remember classes are private by default meaning neither subclasses nor anything outside the class can access, whereas structs are by default public meaning they can be accessed from anywhere
+* `protected` provides a middle ground -> means you can access from subclasses but not anywhere outside the class or subclasses
+* remember that visibility does not affect functionality or performance -> it is simply for developers to help readability and understanding your code and for others to understand your code
