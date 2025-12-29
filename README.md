@@ -138,3 +138,10 @@ int var = 8;
 * to override a base function in the base class, just put the `virtual` keyword in front of it, eg. `virtual std::string GetName()`
 * its also good practice to mark the overriden function using `override` keyword, eg. `std::string GetName() override {return m_Name;}`
 * note virtual functions come with runtime costs -> first extra memory from storing vtable and second from actually searching the vtable for the virtual function to map to
+
+### Interfaces (Pure Virtual Functions)
+* pure virtual function is a virtual function (base function in a base class) for which we do not have an implementation 
+* this means it has to be implemented in a subclass if you want to be able to instantiate that class
+* to declare a pure virtual function set it to 0, eg. `virtual std::string GetName() = 0;`
+* note in C++ interfaces are just implemented as classes (other languages have interface keyword but c++ does not)
+* useful for guaranteeing a class has a certain function so you can use it elsewhere
