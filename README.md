@@ -173,4 +173,9 @@ int var = 8;
 * series of characters inbetween double quotes `"..."`
 * note that string literals are stored in a read only section of memory
 * trying to modify a char pointer string is undefined behaviour 
-* 
+
+### Const
+* for defining visibility of variables to developers -> makes code cleaner
+* a promise that something is going to be constant (ie wont change) -> but remember this is not a hard rule as the promise can be broken!
+* you can use const with pointers to indicate that the contents at that pointer should not be changed
+* you can also specify class methods to be const which means they cant modify any data within the class eg. getters, other read-only methods etc.
