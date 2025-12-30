@@ -161,3 +161,10 @@ int var = 8;
 * you can also declare arrays on the heap, eg. `int* example = new int[5];`
 * difference between stack and heap is the lifetime and also the pointers in memory (heap contains pointers in the memory instead of the actual data)
 * note with std::array in C++11 you get more features like bounds checking and functions like size ->whereas with raw arrays on the stack you can use `sizeof()` but it returns the number of bytes not the number of elements in the array 
+
+### Strings
+* group of characters -> text
+* more specifically in c++ a string is just an array of characters
+* in memory there is a null termination character eg. 00 that indicates the end of the string in memory
+* characters are defined by single quotes `'` in C++ and double quotes `"` indicate a char pointer
+* whenever you pass a string to a function pass it by const reference eg. `const std::string& str` so it doesnt get copied or modified
