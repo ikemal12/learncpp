@@ -168,3 +168,9 @@ int var = 8;
 * in memory there is a null termination character eg. 00 that indicates the end of the string in memory
 * characters are defined by single quotes `'` in C++ and double quotes `"` indicate a char pointer
 * whenever you pass a string to a function pass it by const reference eg. `const std::string& str` so it doesnt get copied or modified
+
+### String Literals
+* series of characters inbetween double quotes `"..."`
+* note that string literals are stored in a read only section of memory
+* trying to modify a char pointer string is undefined behaviour 
+* 
