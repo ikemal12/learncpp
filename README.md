@@ -152,3 +152,12 @@ int var = 8;
 * remember classes are private by default meaning neither subclasses nor anything outside the class can access, whereas structs are by default public meaning they can be accessed from anywhere
 * `protected` provides a middle ground -> means you can access from subclasses but not anywhere outside the class or subclasses
 * remember that visibility does not affect functionality or performance -> it is simply for developers to help readability and understanding your code and for others to understand your code
+
+### Arrays
+* collection of variables
+* stored contiguously in memory
+* an array is just an integer pointer to some memory block
+* indexing an array is just offsetting from the start of this integer pointer, eg. example[2] will access an offset of 8 bytes from the pointer
+* you can also declare arrays on the heap, eg. `int* example = new int[5];`
+* difference between stack and heap is the lifetime and also the pointers in memory (heap contains pointers in the memory instead of the actual data)
+* note with std::array in C++11 you get more features like bounds checking and functions like size ->whereas with raw arrays on the stack you can use `sizeof()` but it returns the number of bytes not the number of elements in the array 
