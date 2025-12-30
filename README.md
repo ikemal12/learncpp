@@ -179,3 +179,9 @@ int var = 8;
 * a promise that something is going to be constant (ie wont change) -> but remember this is not a hard rule as the promise can be broken!
 * you can use const with pointers to indicate that the contents at that pointer should not be changed
 * you can also specify class methods to be const which means they cant modify any data within the class eg. getters, other read-only methods etc.
+
+### Mutable
+* basically means that something can change
+* has 2 main applications/contexts/scenarios
+* first being in a class where we want to modify a variable in a const method within that class, then we have to mark that variable as `mutable`
+* the other one is to do with lambdas ie when you mark a lambda as mutable you can pass in variables by value and modify them
