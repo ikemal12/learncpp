@@ -194,4 +194,9 @@ int var = 8;
 * but there is also a functional difference as well! -> with the default standard way there is the risk of creating duplicate variables where one of the instances is essentially thrown away and unused (waste of memory)
 * tldr: always use member initializer lists! theres no reason not to :)
 
-
+### Ternary Operators
+* basically just syntactic sugar for an if statement
+* format is `variable = (condition) ? (value if condition is true) : (value if condition is false)
+* useful because makes if statements much more compact (eg to a single line of code)
+* also slightly more efficient/faster because it doesnt construct intermediate variables (known as return value optimization)
+* you can nest them as well but this tends to make it harder to read/understand so try to avoid if not necessary
