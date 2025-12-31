@@ -185,3 +185,13 @@ int var = 8;
 * has 2 main applications/contexts/scenarios
 * first being in a class where we want to modify a variable in a const method within that class, then we have to mark that variable as `mutable`
 * the other one is to do with lambdas ie when you mark a lambda as mutable you can pass in variables by value and modify them
+
+### Constructor Member Initializer Lists
+* way to initialize our class member functions in the constructor
+* basically a more concise syntax to initialize the values of your class variables (in a list format) -> note that order is important and must be consistent! 
+* ie make sure to always initialize your variables in the same order that they are declared in
+* why is this useful? -> makes your constructor more concise and easier to read
+* but there is also a functional difference as well! -> with the default standard way there is the risk of creating duplicate variables where one of the instances is essentially thrown away and unused (waste of memory)
+* tldr: always use member initializer lists! theres no reason not to :)
+
+
